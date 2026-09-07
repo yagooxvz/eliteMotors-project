@@ -46,8 +46,6 @@ Plataforma web para exposição e venda de veículos premium.
 
 ---
 
-## Como rodar
+## Como rodar? Clique aqui!
 
-```bash
-npm install
-npm run dev
+```[EliteMotors](https://elitemotors-psi.vercel.app/)
