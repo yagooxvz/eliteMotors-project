@@ -46,6 +46,6 @@ Plataforma web para exposição e venda de veículos premium.
 
 ---
 
-## Como rodar? Clique aqui!
+## Como rodar?
 
-```[EliteMotors](https://elitemotors-psi.vercel.app/)
+Clique aqui [EliteMotors](https://elitemotors-os86wr7q8-yagooxvzs-projects.vercel.app/).
