@@ -1,32 +1,53 @@
-# React + TypeScript + Vite
+# LiteMotors
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Plataforma web para exposição e venda de veículos premium.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias
 
-## React Compiler
+- **React 19** + **TypeScript**
+- **Vite 8** — bundler e dev server
+- **TailwindCSS 4** — estilização
+- **Framer Motion** — animações e transições de página
+- **React Router DOM 7** — roteamento SPA
+- **Lucide React** — ícones
+- **Oxlint** — linting
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Componentes
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+| Componente | Descrição |
+|---|---|
+| `Header` | Navbar sticky com menu mobile |
+| `Hero` | Seção principal com animação de entrada |
+| `Button` | Botão reutilizável com 4 variantes |
+| `CategorySection` | Navegação por categoria de veículo |
+| `FeaturedVehicles` | Grid de veículos em destaque |
+| `VehicleCard` | Card de veículo (featured / default / compact) |
+| `SearchPalette` | Busca global com atalho `Ctrl+K` |
+| `StorySection` | Timeline da história da empresa |
+| `AboutSection` | Diferenciais e métricas |
+| `FAQ` | Acordeão de perguntas frequentes |
+| `Footer` | Rodapé com links e newsletter |
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Páginas
+
+| Rota | Página |
+|---|---|
+| `/` | Landing page |
+| `/veiculos` | Catálogo com filtros |
+| `/veiculos/:id` | Detalhe do veículo |
+| `/sobre` | Institucional |
+| `/contato` | Formulário de contato |
+
+---
+
+## Como rodar
+
+```bash
+npm install
+npm run dev
